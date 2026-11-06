@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Contacte - Club Excursionista</title>
+</head>
+
+<body>
+
+<header>
+<p>Club Excursionista Serra Alta</p>
+<nav>
+<ul>
+<li><a href="index.html">Inici</a></li>
+<li><a href="informacio.html">Informació</a></li>
+<li><a href="contacte.html">Contacte</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Contacte</h1>
+
+<section>
+<h2>Dades de contacte</h2>
+
+<address>
+<!-- # address = sirve para poner los datos de contacto -->
+Club Excursionista Serra Alta<br>
+Carrer de la Muntanya, 12<br>
+08000 Barcelona<br>
+<!-- # br = salto de línea -->
+Correu: <a href="mailto:info@club.example">info@club.example</a><br>
+Telèfon: <a href="tel:+34930000000">930 00 00 00</a>
+</address>
+</section>
+
+<section>
+<h2>Formulari de contacte</h2>
+
+<form method="post">
+<!-- # form = el formulario. method="post" es la forma de enviar los datos -->
+
+<p>
+<label for="nom">Nom:</label>
+<!-- # label = texto junto al campo. for="nom" lo conecta con el input de id="nom" -->
+<input type="text" id="nom" name="nom" required>
+<!-- # type="text" = campo de texto. required = obligatorio -->
+</p>
+
+<p>
+<label for="email">Correu electrònic:</label>
+<input type="email" id="email" name="email" required>
+<!-- # type="email" comprueba que tenga forma de correo (con @) -->
+</p>
+
+<p>
+<label for="motiu">Motiu de contacte:</label>
+<select id="motiu" name="motiu">
+<!-- # select = lista desplegable. Cada option es una opción -->
+<option value="informacio">Demanar informació</option>
+<option value="inscripcio">Fer-me soci</option>
+<option value="altres">Altres</option>
+</select>
+</p>
+
+<p>
+<label for="missatge">Missatge:</label><br>
+<textarea id="missatge" name="missatge" rows="5" cols="40" required></textarea>
+<!-- # textarea = cuadro para escribir un texto largo -->
+</p>
+
+<p>
+<input type="checkbox" id="condicions" name="condicions" required>
+<!-- # checkbox = casilla para marcar. Aquí es obligatoria -->
+<label for="condicions">Accepto les condicions d'ús</label>
+</p>
+
+<p>
+<button type="submit">Envia</button>
+<!-- # button type="submit" = botón que envía el formulario -->
+</p>
+
+</form>
+</section>
+</main>
+
+<footer>
+<p>Correu: <a href="mailto:info@club.example">info@club.example</a></p>
+<p>Telèfon: <a href="tel:+34930000000">930 00 00 00</a></p>
+</footer>
+
+</body>
+</html>
